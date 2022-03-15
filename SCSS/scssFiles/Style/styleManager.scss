@@ -1,0 +1,165 @@
+@font-face 
+{
+    font-family:"blinker";
+    src:url("../../../Fonts/Blinker/Blinker-Regular.ttf");
+}
+@font-face 
+{
+    font-family:"blinkerBold";
+    src:url("../../../Fonts/Blinker/Blinker-Bold.ttf");
+}
+@font-face 
+{
+    font-family:"spaceMono";
+    src:url("../../../Fonts/spaceMono/SpaceMono-Regular.ttf");
+}
+
+// MIXINS (8 Mixins)
+@mixin h1
+{
+    color:$white;
+    display:inline-block;
+    font-family:blinkerBold;
+    font-size:40px;
+    margin:47px 0 0 0;
+    text-align:center;
+    width:100%;
+}
+@mixin h3
+{
+    color:$white;
+    display:inline-block;
+    font-family:blinker;
+}
+@mixin h6 
+{
+    color:$white;
+    font-family:spaceMono;
+    font-size:12px;
+}
+
+
+@mixin h1_2400
+{
+    font-size:50px;
+    margin:58px 0 0 0;
+}
+@mixin h6_2400
+{
+    font-size:15px;
+}
+
+
+@mixin h1_3000
+{
+    font-size:62px;
+    margin:72px 0 0 0;
+}
+@mixin h6_3000
+{
+    font-size:18px;
+}
+
+
+@mixin h1_3750
+{
+    font-size:77px;
+    margin:90px 0 0 0;
+}
+@mixin h6_3750
+{
+    font-size:22px;
+}
+
+
+// VARIABLES
+$field:rgba(255, 255, 255, 0.3);
+$rectangle:rgba(255, 255, 255, 0.5);
+$social:rgba(255, 255, 255, 0.8);
+$white:#ffffff;
+
+
+// BODY
+body 
+{
+    background:rgb(255,130,60);
+    background:linear-gradient(90deg, rgba(255,130,60,1) 0%, rgba(130,77,255,1) 100%, rgba(0,212,255,1) 100%);
+    height:100vh;
+    overflow-x:hidden;
+
+
+    // INCLUDED MIXINS
+    h1
+    {
+        @include h1;
+    }
+    h3
+    {
+        @include h3;
+    }
+    h6
+    {
+        @include h6;
+    }
+
+    // MAIN CONTAINER
+    .mainContainer 
+    {
+        // IMPORTS
+        @import "../Content/section";
+        height:100%;
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+
+
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    body 
+    {
+        h1
+        {
+            @include h1_2400;
+        }
+        h6
+        {
+            @include h6_2400;
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    body 
+    {
+        h1
+        {
+            @include h1_3000;
+        }
+        h6
+        {
+            @include h6_3000;
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    body 
+    {
+        h1
+        {
+            @include h1_3750;
+        }
+        h6
+        {
+            @include h6_3750;
+        }
+    }
+}

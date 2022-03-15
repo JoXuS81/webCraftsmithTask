@@ -1,0 +1,902 @@
+@font-face {
+  font-family: "blinker";
+  src: url("../../../Fonts/Blinker/Blinker-Regular.ttf");
+}
+
+@font-face {
+  font-family: "blinkerBold";
+  src: url("../../../Fonts/Blinker/Blinker-Bold.ttf");
+}
+
+@font-face {
+  font-family: "spaceMono";
+  src: url("../../../Fonts/spaceMono/SpaceMono-Regular.ttf");
+}
+
+body {
+  background: #ff823c;
+  background: -webkit-gradient(linear, left top, right top, from(#ff823c), color-stop(100%, #824dff), to(#00d4ff));
+  background: linear-gradient(90deg, #ff823c 0%, #824dff 100%, #00d4ff 100%);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body h1 {
+  color: #ffffff;
+  display: inline-block;
+  font-family: blinkerBold;
+  font-size: 40px;
+  margin: 47px 0 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+body h3 {
+  color: #ffffff;
+  display: inline-block;
+  font-family: blinker;
+}
+
+body h6 {
+  color: #ffffff;
+  font-family: spaceMono;
+  font-size: 12px;
+}
+
+body .mainContainer {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body .mainContainer section {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body .mainContainer section .contentArea {
+  height: 100%;
+  width: 100%;
+}
+
+body .mainContainer section .contentArea .leftSide {
+  border-right: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer {
+  height: 100%;
+  width: 80%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom {
+  bottom: 0;
+  position: absolute;
+  width: 40%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form {
+  position: relative;
+  width: 90%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form a {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  text-decoration: none;
+  top: 25px;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form .field {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: blinker;
+  font-size: 25px;
+  padding: 25px;
+  width: 100%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social .socialArea {
+  width: 60%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social .socialArea a {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: blinker;
+  font-size: 25px;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+  bottom: 300px;
+  position: absolute;
+  width: 40%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: -15px;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom h3 {
+  text-align: end;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom h3 span {
+  display: block;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleLeft {
+  width: 35%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 65%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+  font-size: 40px;
+  margin: 0;
+  text-align: start;
+  width: initial;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+  display: block;
+  letter-spacing: 10px;
+  line-height: 30px;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 .textOne {
+  position: relative;
+  right: 20%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 .textTwo {
+  position: relative;
+  right: 10%;
+}
+
+body .mainContainer section .contentArea .leftSide .leftSideContainer .top {
+  height: 33.3%;
+}
+
+body .mainContainer section .contentArea .rightSide .middleRight {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+
+body .mainContainer section .contentArea .rightSide .middleRight img {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer {
+  height: 100%;
+  width: 100%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame {
+  height: calc(100% - 80px);
+  position: relative;
+  width: 95%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funLeft {
+  width: 93%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funLeft h6 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funRight {
+  width: 7%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funRight .rectangle {
+  background: rgba(255, 255, 255, 0.5);
+  height: 15px;
+  width: 15px;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateLeft {
+  width: 7%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateLeft .rectangle {
+  background: rgba(255, 255, 255, 0.5);
+  height: 15px;
+  width: 15px;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateRight {
+  width: 93%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateRight h6 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeLeft {
+  width: 93%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeLeft h6 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeRight {
+  width: 7%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeRight .rectangle {
+  background: rgba(255, 255, 255, 0.5);
+  height: 15px;
+  width: 15px;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseLeft {
+  width: 7%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseLeft .rectangle {
+  background: rgba(255, 255, 255, 0.5);
+  height: 15px;
+  width: 15px;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseRight {
+  width: 93%;
+}
+
+body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseRight h6 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+body .mainContainer section .scrollingText {
+  height: 15px;
+  margin: 7px 0 0 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .mainContainer section .scrollingText h6 {
+  -webkit-animation: myAnimation 15s linear infinite;
+          animation: myAnimation 15s linear infinite;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+@-webkit-keyframes myAnimation {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes myAnimation {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+body .mainContainer section .scrollingTextBottom {
+  bottom: 0;
+  height: 15px;
+  margin: 0 0 7px 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+body .mainContainer section .scrollingTextBottom h6 {
+  -webkit-animation: myAnimation 15s linear infinite;
+          animation: myAnimation 15s linear infinite;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+@keyframes myAnimation {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+body .mainContainer section .smallDevicesLine {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form a {
+    font-size: 12px;
+    top: 25px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form .field {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1400px) {
+  body .mainContainer section .contentArea .leftSide {
+    border-right: none;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom {
+    position: relative;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea {
+    margin-bottom: 30px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form {
+    bottom: 100px;
+    position: relative;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea .social .socialArea {
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    bottom: 225px;
+    position: relative;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom h3 {
+    text-align: center;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 .textOne {
+    right: 0;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 .textTwo {
+    right: 0;
+  }
+  body .mainContainer section .contentArea .rightSide {
+    background: orangered;
+    display: none;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .rightSide .middleRight {
+    top: 750px;
+    width: 100%;
+  }
+  body .mainContainer section .contentArea .rightSide .middleRight img {
+    display: none;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame {
+    display: none;
+  }
+  body .mainContainer section .scrollingText {
+    display: none;
+  }
+  body .mainContainer section .scrollingTextBottom {
+    display: none;
+  }
+  body .mainContainer section .smallDevicesLine {
+    background: #ffffff;
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1475px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer {
+    width: 90%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    letter-spacing: 6px;
+  }
+}
+
+@media (min-width: 1476px) and (max-width: 1575px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer {
+    width: 90%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    letter-spacing: 6px;
+  }
+}
+
+@media (min-width: 1576px) and (max-width: 1675px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer {
+    width: 90%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    letter-spacing: 8px;
+  }
+}
+
+@media (min-width: 1676px) and (max-width: 1775px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer {
+    width: 90%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    width: 45%;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    letter-spacing: 12px;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  body .mainContainer section .contentArea .leftSide {
+    border-right: 1.25px solid #ffffff;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea {
+    margin-bottom: 37px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form a {
+    font-size: 31px;
+    right: 31px;
+    top: 31px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form .field {
+    border: 1.25px solid #ffffff;
+    border-radius: 56px;
+    font-size: 31px;
+    padding: 31px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social {
+    margin-bottom: 125px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social .socialArea a {
+    font-size: 31px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    bottom: 375px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom {
+    margin-top: -18px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleLeft img {
+    height: auto;
+    width: 191px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 45px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    line-height: 37px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame {
+    height: calc(100% - 100px);
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funRight .rectangle {
+    height: 18px;
+    width: 18px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateLeft .rectangle {
+    height: 18px;
+    width: 18px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeRight .rectangle {
+    height: 18px;
+    width: 18px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseLeft .rectangle {
+    height: 18px;
+    width: 18px;
+  }
+  body .mainContainer section .scrollingText {
+    height: 18px;
+    margin: 8.7px 0 0 0;
+  }
+  body .mainContainer section .scrollingTextBottom {
+    height: 18px;
+    margin: 0 0 8.7px 0;
+  }
+}
+
+@media (min-width: 2201px) and (max-width: 2400px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 50px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    line-height: 37px;
+  }
+}
+
+@media (min-width: 2401px) and (max-width: 3000px) {
+  body .mainContainer section .contentArea .leftSide {
+    border-right: 1.56px solid #ffffff;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea {
+    margin-bottom: 46px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form a {
+    font-size: 38px;
+    right: 38px;
+    top: 38px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form .field {
+    border: 1.56px solid #ffffff;
+    border-radius: 70px;
+    font-size: 38px;
+    padding: 38px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social {
+    margin-bottom: 156px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social .socialArea a {
+    font-size: 38px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    bottom: 469px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom {
+    margin-top: -22px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleLeft img {
+    height: auto;
+    width: 239px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 56px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    line-height: 46px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame {
+    height: calc(100% - 125px);
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funRight .rectangle {
+    height: 22px;
+    width: 22px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateLeft .rectangle {
+    height: 22px;
+    width: 22px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeRight .rectangle {
+    height: 22px;
+    width: 22px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseLeft .rectangle {
+    height: 22px;
+    width: 22px;
+  }
+  body .mainContainer section .scrollingText {
+    height: 22px;
+    margin: 10.8px 0 0 0;
+  }
+  body .mainContainer section .scrollingTextBottom {
+    height: 22px;
+    margin: 0 0 10.8px 0;
+  }
+}
+
+@media (min-width: 2751px) and (max-width: 3000px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 62px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight span {
+    line-height: 46px;
+  }
+}
+
+@media (min-width: 3001px) and (max-width: 3750px) {
+  body .mainContainer section .contentArea .leftSide {
+    border-right: 1.95px solid #ffffff;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea {
+    margin-bottom: 57px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form a {
+    font-size: 47px;
+    right: 47px;
+    top: 47px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form .field {
+    border: 1.95px solid #ffffff;
+    border-radius: 87px;
+    font-size: 47px;
+    padding: 47px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social {
+    margin-bottom: 195px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social .socialArea a {
+    font-size: 47px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    bottom: 586px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom {
+    margin-top: -27px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleLeft img {
+    height: auto;
+    width: 299px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 70px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    line-height: 57px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame {
+    height: calc(100% - 156px);
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funRight .rectangle {
+    height: 27px;
+    width: 27px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateLeft .rectangle {
+    height: 27px;
+    width: 27px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeRight .rectangle {
+    height: 27px;
+    width: 27px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseLeft .rectangle {
+    height: 27px;
+    width: 27px;
+  }
+  body .mainContainer section .scrollingText {
+    height: 27px;
+    margin: 13.5px 0 0 0;
+  }
+  body .mainContainer section .scrollingTextBottom {
+    height: 27px;
+    margin: 0 0 13.5px 0;
+  }
+}
+
+@media (min-width: 3439px) and (max-width: 3750px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 77px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight span {
+    line-height: 57px;
+  }
+}
+
+@media (min-width: 3751px) {
+  body .mainContainer section .contentArea .leftSide {
+    border-right: 2.43px solid #ffffff;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea {
+    margin-bottom: 71px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form a {
+    font-size: 58px;
+    right: 58px;
+    top: 58px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .formArea form .field {
+    border: 2.43px solid #ffffff;
+    border-radius: 108px;
+    font-size: 58px;
+    padding: 58px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social {
+    margin-bottom: 243px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .bottom .social .socialArea a {
+    font-size: 58px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle {
+    bottom: 733px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleBottom {
+    margin-top: -33px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleLeft img {
+    height: auto;
+    width: 374px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 87px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 span {
+    line-height: 71px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame {
+    height: calc(100% - 195px);
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .fun .funRight .rectangle {
+    height: 33px;
+    width: 33px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .bottomRight .hydrate .hydrateLeft .rectangle {
+    height: 33px;
+    width: 33px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .occlude .occludeRight .rectangle {
+    height: 33px;
+    width: 33px;
+  }
+  body .mainContainer section .contentArea .rightSide .rightSideContainer .frame .topRight .reuse .reuseLeft .rectangle {
+    height: 33px;
+    width: 33px;
+  }
+  body .mainContainer section .scrollingText {
+    height: 33px;
+    margin: 16.9px 0 0 0;
+  }
+  body .mainContainer section .scrollingTextBottom {
+    height: 33px;
+    margin: 0 0 16.9px 0;
+  }
+}
+
+@media (min-width: 4299px) {
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight h1 {
+    font-size: 96px;
+  }
+  body .mainContainer section .contentArea .leftSide .leftSideContainer .middle .middleRight span {
+    line-height: 71px;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  body h1 {
+    font-size: 50px;
+    margin: 58px 0 0 0;
+  }
+  body h6 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 2401px) and (max-width: 3000px) {
+  body h1 {
+    font-size: 62px;
+    margin: 72px 0 0 0;
+  }
+  body h6 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 3001px) and (max-width: 3750px) {
+  body h1 {
+    font-size: 77px;
+    margin: 90px 0 0 0;
+  }
+  body h6 {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=styleManager.css.map */

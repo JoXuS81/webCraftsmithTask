@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "blinkerRegular";
+  src: url("../../../Fonts/Blinker/Blinker-Regular.ttf");
+}
+
+body {
+  background: orangered;
+  overflow-x: hidden;
+}
+
+body h1 {
+  color: #ffffff;
+  font-size: 40px;
+  padding-top: 72px;
+}
+
+body .mainContainer section {
+  width: 80%;
+}
+/*# sourceMappingURL=style.css.map */
